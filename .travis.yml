@@ -1,6 +1,7 @@
 language: node_js
 node_js:
   - 14
+#Permette a travis di cachare tra una build e l'altra per essere più veloce
 cache:
   directories:
     - $HOME/.cache/yarn
