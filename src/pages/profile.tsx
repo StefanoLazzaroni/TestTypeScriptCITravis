@@ -7,7 +7,7 @@ Amplify.configure(awsconfig);
 
 // Salva in automatico i cookie per ricordare il il login è stato fatto
 
-const Profile = ()=>{
+const Profile = ()={
 
     //mostrare messaggi ed errori nel successo o no del cambio di password + confirmPass
 
