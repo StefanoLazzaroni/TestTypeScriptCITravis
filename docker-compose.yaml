@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  EML-FE:
+    container_name: "eml-fe-test"
+    image: "eml-fe:test"
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      #Permette il live update, da omettere nel deploy
+      - ./src:/app/src
